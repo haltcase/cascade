@@ -1,0 +1,10 @@
+# IDE configurations
+.c9
+.idea
+.vscode
+
+# built files
+nimcache
+*.exe
+cascade
+tests/tests
