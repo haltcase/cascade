@@ -15,7 +15,7 @@ var res = Button()
 res.text = "ok"
 res.width = 30
 res.color = "#13a89e"
-res.btnEcho()
+res.enable()
 ```
 
 With cascade, you don't need to repeat yourself:
@@ -26,7 +26,7 @@ let btn = cascade Button():
   text = "ok"
   width = 30
   color = "#13a89e"
-  btnEcho()
+  enable()
 ```
 
 Also notice you can avoid declaring a `var` if you don't need to modify

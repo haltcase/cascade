@@ -24,7 +24,7 @@ type
     width: int
     color: string
 
-method btnEcho (btn: Button) {.base.} =
+method enable (btn: Button) {.base.} =
   discard "some method"
 
 proc setStr (foo: var Foo, val: string, suffix: string) =
@@ -152,12 +152,12 @@ suite "cascade":
       text = "ok"
       width = 30
       color = "#13a89e"
-      btnEcho()
+      enable()
 
     var res = Button()
     res.text = "ok"
     res.width = 30
     res.color = "#13a89e"
-    res.btnEcho()
+    res.enable()
 
     check btn == res
