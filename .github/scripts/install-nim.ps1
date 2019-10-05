@@ -25,7 +25,7 @@ if (-not $isWindows) {
   # https://github.com/dom96/choosenim/issues/128
 
   $packageName = "nim-1.0.0"
-  $zipPath = join-path (join-path $home ".gradle") "nim.zip"
+  $zipPath = join-path $home "nim.zip"
 
   $request = @{
     uri     = "https://nim-lang.org/download/${packageName}_x64.zip"
