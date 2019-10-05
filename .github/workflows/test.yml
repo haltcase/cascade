@@ -18,7 +18,7 @@ jobs:
           # only testing stable on Windows until choosenim supports x64
           - os: windows-latest
             nim: devel
-    name: Nim ${{ matrix.nim }}
+    name: Nim ${{ matrix.nim }} (${{ matrix.os }})
     steps:
       - uses: actions/checkout@master
       - name: Install Nim
