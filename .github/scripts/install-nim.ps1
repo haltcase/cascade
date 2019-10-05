@@ -16,8 +16,8 @@ if (-not $isWindows) {
 
   invoke-webrequest @request
 
-  sh $initPath
-  choosenim $nimVersion
+  $env:CHOOSENIM_CHOOSE_VERSION = $nimVersion
+  sh $initPath -y
 
   remove-item $initPath | out-null
 } else {
