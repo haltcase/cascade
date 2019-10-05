@@ -1,0 +1,30 @@
+name: Test
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest, macOS-latest]
+        nim: [stable, devel]
+        exclude:
+          # only testing stable on Windows until choosenim supports x64
+          - os: windows-latest
+            nim: devel
+    name: Nim ${{ matrix.nim }}
+    steps:
+      - uses: actions/checkout@master
+      - name: Install Nim
+        shell: pwsh
+        run: ./.github/scripts/install-nim.ps1
+      - name: Install dependencies
+        run: nimble install -y
+      - name: Run tests
+        run: nimble test
