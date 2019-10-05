@@ -40,4 +40,7 @@ if (-not $isWindows) {
   join-path $extractDir $packageName | set-location
 
   & .\finish -y
+
+  write-host "::add-path::$(get-command nim)"
+  write-host "::add-path::$(join-path $home .nimble bin)"
 }
