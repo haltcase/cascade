@@ -19,7 +19,7 @@ if (-not $isWindows) {
   $env:CHOOSENIM_CHOOSE_VERSION = $nimVersion
   sh $initPath -y
 
-  $nimDir = join-path $home .choosenim current | get-content
+  $nimDir = get-content (join-path $home .choosenim current)
   write-host "::add-path::$(join-path $nimDir bin)"
   write-host "::add-path::$(join-path $home .nimble bin)"
 } else {
