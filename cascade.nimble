@@ -1,4 +1,4 @@
-version       = "0.2.0"
+version       = "1.0.0"
 author        = "citycide"
 description   = "Method & assignment cascades for Nim, inspired by Smalltalk & Dart."
 license       = "MIT"
