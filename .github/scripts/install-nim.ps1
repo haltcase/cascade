@@ -39,5 +39,5 @@ if (-not $isWindows) {
 
   join-path $extractDir $packageName | set-location
 
-  & .\finish
+  & .\finish -y
 }
