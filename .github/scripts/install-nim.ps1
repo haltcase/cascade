@@ -19,7 +19,9 @@ if (-not $isWindows) {
   $env:CHOOSENIM_CHOOSE_VERSION = $nimVersion
   sh $initPath -y
 
-  remove-item $initPath | out-null
+  $nimDir = join-path $home .choosenim current | get-content
+  write-host "::add-path::$(join-path $nimDir bin)"
+  write-host "::add-path::$(join-path $home .nimble bin)"
 } else {
   # TODO: use choosenim on Windows once x64 is supported
   # https://github.com/dom96/choosenim/issues/128
@@ -41,6 +43,6 @@ if (-not $isWindows) {
 
   & .\finish -y
 
-  write-host "::add-path::$(get-command nim)"
+  write-host "::add-path::$(join-path $extractDir $packageName bin)"
   write-host "::add-path::$(join-path $home .nimble bin)"
 }
