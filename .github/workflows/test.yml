@@ -23,7 +23,7 @@ jobs:
       - uses: actions/checkout@master
       - name: Install Nim
         shell: pwsh
-        run: ./.github/scripts/install-nim.ps1
+        run: ./.github/scripts/install-nim.ps1 ${{ matrix.nim }}
       - name: Install dependencies
         run: nimble install -y
       - name: Run tests
