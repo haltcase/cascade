@@ -10,7 +10,7 @@ if (-not $isWindows) {
   $initPath = join-path $home "init.sh"
 
   $request = @{
-    uri     = "https://nim-lang.org/choosenim/init.sh"
+    uri = "https://nim-lang.org/choosenim/init.sh"
     outFile = $initPath
   }
 
@@ -30,7 +30,7 @@ if (-not $isWindows) {
   $zipPath = join-path $home "nim.zip"
 
   $request = @{
-    uri     = "https://nim-lang.org/download/${packageName}_x64.zip"
+    uri = "https://nim-lang.org/download/${packageName}_x64.zip"
     outFile = $zipPath
   }
 
