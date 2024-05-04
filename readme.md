@@ -1,4 +1,4 @@
-# cascade &middot; [![nimble](https://flat.badgen.net/badge/available%20on/nimble/yellow)](https://nimble.directory/pkg/cascade) ![license](https://flat.badgen.net/github/license/citycide/cascade)
+# cascade &middot; [![nimble](https://flat.badgen.net/badge/available%20on/nimble/yellow)](https://nimble.directory/pkg/cascade) ![license](https://flat.badgen.net/github/license/haltcase/cascade)
 
 > Method & assignment cascades for Nim, inspired by Smalltalk & Dart.
 
@@ -136,7 +136,7 @@ one. Pull requests are appreciated!
 To build cascade from source you'll need to have [Nim][nim] installed,
 and should also have [Nimble][nimble], Nim's package manager.
 
-1. Clone the repo: `git clone https://github.com/citycide/cascade.git`
+1. Clone the repo: `git clone https://github.com/haltcase/cascade.git`
 2. Move into the newly cloned directory: `cd cascade`
 3. Make your changes: `cascade.nim`, `tests/tests.nim`
 4. Run tests: `nimble test`
@@ -149,10 +149,10 @@ are also welcome.
 
 ## license
 
-MIT © [Bo Lingen / citycide](https://github.com/citycide)
+MIT © [Bo Lingen / haltcase](https://github.com/haltcase)
 
 [dart]: https://dart.dev/language/operators#cascade-notation
 [kotlin]: https://kotlinlang.org/docs/scope-functions.html#apply
 [nim]: https://github.com/nim-lang/nim
 [nimble]: https://github.com/nim-lang/nimble
-[issues]: https://github.com/citycide/cascade/issues
+[issues]: https://github.com/haltcase/cascade/issues
