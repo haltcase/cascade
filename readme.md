@@ -151,8 +151,8 @@ are also welcome.
 
 MIT © [Bo Lingen / citycide](https://github.com/citycide)
 
-[dart]: https://www.dartlang.org/guides/language/language-tour#cascade-notation-
-[kotlin]: http://beust.com/weblog/2015/10/30/exploring-the-kotlin-standard-library/
+[dart]: https://dart.dev/language/operators#cascade-notation
+[kotlin]: https://kotlinlang.org/docs/scope-functions.html#apply
 [nim]: https://github.com/nim-lang/nim
 [nimble]: https://github.com/nim-lang/nimble
 [issues]: https://github.com/citycide/cascade/issues
